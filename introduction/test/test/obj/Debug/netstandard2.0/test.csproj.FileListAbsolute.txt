@@ -1,0 +1,9 @@
+D:\School\6. felev\onlab\introduction\test\test\bin\Debug\netstandard2.0\test.deps.json
+D:\School\6. felev\onlab\introduction\test\test\bin\Debug\netstandard2.0\test.dll
+D:\School\6. felev\onlab\introduction\test\test\bin\Debug\netstandard2.0\test.pdb
+D:\School\6. felev\onlab\introduction\test\test\obj\Debug\netstandard2.0\test.csprojAssemblyReference.cache
+D:\School\6. felev\onlab\introduction\test\test\obj\Debug\netstandard2.0\test.AssemblyInfoInputs.cache
+D:\School\6. felev\onlab\introduction\test\test\obj\Debug\netstandard2.0\test.AssemblyInfo.cs
+D:\School\6. felev\onlab\introduction\test\test\obj\Debug\netstandard2.0\test.csproj.CoreCompileInputs.cache
+D:\School\6. felev\onlab\introduction\test\test\obj\Debug\netstandard2.0\test.dll
+D:\School\6. felev\onlab\introduction\test\test\obj\Debug\netstandard2.0\test.pdb

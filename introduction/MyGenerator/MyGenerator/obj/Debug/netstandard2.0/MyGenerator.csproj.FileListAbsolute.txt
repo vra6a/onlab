@@ -1,0 +1,9 @@
+D:\School\6. felev\onlab\introduction\MyGenerator\MyGenerator\bin\Debug\netstandard2.0\MyGenerator.deps.json
+D:\School\6. felev\onlab\introduction\MyGenerator\MyGenerator\bin\Debug\netstandard2.0\MyGenerator.dll
+D:\School\6. felev\onlab\introduction\MyGenerator\MyGenerator\bin\Debug\netstandard2.0\MyGenerator.pdb
+D:\School\6. felev\onlab\introduction\MyGenerator\MyGenerator\obj\Debug\netstandard2.0\MyGenerator.csprojAssemblyReference.cache
+D:\School\6. felev\onlab\introduction\MyGenerator\MyGenerator\obj\Debug\netstandard2.0\MyGenerator.AssemblyInfoInputs.cache
+D:\School\6. felev\onlab\introduction\MyGenerator\MyGenerator\obj\Debug\netstandard2.0\MyGenerator.AssemblyInfo.cs
+D:\School\6. felev\onlab\introduction\MyGenerator\MyGenerator\obj\Debug\netstandard2.0\MyGenerator.csproj.CoreCompileInputs.cache
+D:\School\6. felev\onlab\introduction\MyGenerator\MyGenerator\obj\Debug\netstandard2.0\MyGenerator.dll
+D:\School\6. felev\onlab\introduction\MyGenerator\MyGenerator\obj\Debug\netstandard2.0\MyGenerator.pdb
