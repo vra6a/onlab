@@ -1,0 +1,12 @@
+D:\School\6. felev\onlab\MGen\MGen\bin\Debug\net5.0\MGen.deps.json
+D:\School\6. felev\onlab\MGen\MGen\bin\Debug\net5.0\MGen.dll
+D:\School\6. felev\onlab\MGen\MGen\bin\Debug\net5.0\ref\MGen.dll
+D:\School\6. felev\onlab\MGen\MGen\bin\Debug\net5.0\MGen.pdb
+D:\School\6. felev\onlab\MGen\MGen\obj\Debug\net5.0\MGen.csprojAssemblyReference.cache
+D:\School\6. felev\onlab\MGen\MGen\obj\Debug\net5.0\MGen.GeneratedMSBuildEditorConfig.editorconfig
+D:\School\6. felev\onlab\MGen\MGen\obj\Debug\net5.0\MGen.AssemblyInfoInputs.cache
+D:\School\6. felev\onlab\MGen\MGen\obj\Debug\net5.0\MGen.AssemblyInfo.cs
+D:\School\6. felev\onlab\MGen\MGen\obj\Debug\net5.0\MGen.csproj.CoreCompileInputs.cache
+D:\School\6. felev\onlab\MGen\MGen\obj\Debug\net5.0\MGen.dll
+D:\School\6. felev\onlab\MGen\MGen\obj\Debug\net5.0\ref\MGen.dll
+D:\School\6. felev\onlab\MGen\MGen\obj\Debug\net5.0\MGen.pdb

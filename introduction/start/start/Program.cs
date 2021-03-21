@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,8 +13,25 @@ namespace start
     {
         static void Main(string[] args)
         {
-            HelloWorldGenerated.HelloWorld.SayHello();
-            Thread.Sleep(10);
+            //HelloWorldGenerated.HelloWorld.SayHello();
+            //Thread.Sleep(10);
+
+            MGenSample.HelloWorld.Hello("asd");
         }
     }
 }
+
+
+namespace MGenSample
+{
+    public static class HelloWorld
+    {
+        public static void Hello(string name)
+        {
+            Console.WriteLine("Hello, " + name + "");
+            Console.ReadLine();
+        }
+    }
+}
+
+

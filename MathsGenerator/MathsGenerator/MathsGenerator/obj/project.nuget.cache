@@ -1,0 +1,43 @@
+{
+  "version": 2,
+  "dgSpecHash": "X2uuLMBHRDlObZ62kE3NlnD0i2EwEHQJ7d9DQXssiILzjFfFL9G/6/Pd3hOvSmfzFu/bAmRhuKK1s7/1rP1RJQ==",
+  "success": true,
+  "projectFilePath": "D:\\School\\6. felev\\onlab\\MathsGenerator\\MathsGenerator\\MathsGenerator\\MathsGenerator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\varga\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.0.0\\microsoft.codeanalysis.analyzers.3.0.0.nupkg.sha512",
+    "C:\\Users\\varga\\.nuget\\packages\\microsoft.codeanalysis.common\\3.8.0-3.final\\microsoft.codeanalysis.common.3.8.0-3.final.nupkg.sha512",
+    "C:\\Users\\varga\\.nuget\\packages\\microsoft.codeanalysis.csharp\\3.8.0-3.final\\microsoft.codeanalysis.csharp.3.8.0-3.final.nupkg.sha512",
+    "C:\\Users\\varga\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\varga\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\varga\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\varga\\.nuget\\packages\\system.collections.immutable\\5.0.0-preview.8.20407.11\\system.collections.immutable.5.0.0-preview.8.20407.11.nupkg.sha512",
+    "C:\\Users\\varga\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\varga\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
+    "C:\\Users\\varga\\.nuget\\packages\\system.reflection.metadata\\5.0.0-preview.8.20407.11\\system.reflection.metadata.5.0.0-preview.8.20407.11.nupkg.sha512",
+    "C:\\Users\\varga\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512",
+    "C:\\Users\\varga\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512",
+    "C:\\Users\\varga\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Microsoft.CodeAnalysis.Common 3.8.0-3.final depends on System.Collections.Immutable (>= 5.0.0-preview.8.20371.14) but System.Collections.Immutable 5.0.0-preview.8.20371.14 was not found. An approximate best match of System.Collections.Immutable 5.0.0-preview.8.20407.11 was resolved.",
+      "libraryId": "System.Collections.Immutable",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Microsoft.CodeAnalysis.Common 3.8.0-3.final depends on System.Reflection.Metadata (>= 5.0.0-preview.8.20371.14) but System.Reflection.Metadata 5.0.0-preview.8.20371.14 was not found. An approximate best match of System.Reflection.Metadata 5.0.0-preview.8.20407.11 was resolved.",
+      "libraryId": "System.Reflection.Metadata",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
+}

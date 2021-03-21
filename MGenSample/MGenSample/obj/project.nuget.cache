@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "RqCdVJmYKEvI9QYLGkMd748h4u2FOuD6YUmYe0WrMLtZ+xJN9H+/D6xjuIV8gAma7WEG763/iKzS59CmACbtTg==",
+  "success": true,
+  "projectFilePath": "D:\\School\\6. felev\\onlab\\MGenSample\\MGenSample\\MGenSample.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\varga\\.nuget\\packages\\antlr4.runtime.standard\\4.9.1\\antlr4.runtime.standard.4.9.1.nupkg.sha512",
+    "C:\\Users\\varga\\.nuget\\packages\\metadslx.codeanalysis\\0.10.467\\metadslx.codeanalysis.0.10.467.nupkg.sha512",
+    "C:\\Users\\varga\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0\\microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
+    "C:\\Users\\varga\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\varga\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\varga\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
+    "C:\\Users\\varga\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\varga\\.nuget\\packages\\system.reflection.metadata\\5.0.0\\system.reflection.metadata.5.0.0.nupkg.sha512",
+    "C:\\Users\\varga\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\varga\\.nuget\\packages\\system.text.encoding.codepages\\5.0.0\\system.text.encoding.codepages.5.0.0.nupkg.sha512",
+    "C:\\Users\\varga\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}

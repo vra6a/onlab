@@ -1,0 +1,13 @@
+D:\School\6. felev\onlab\codewriter\codewriter\bin\Debug\netcoreapp3.1\codewriter.exe
+D:\School\6. felev\onlab\codewriter\codewriter\bin\Debug\netcoreapp3.1\codewriter.deps.json
+D:\School\6. felev\onlab\codewriter\codewriter\bin\Debug\netcoreapp3.1\codewriter.runtimeconfig.json
+D:\School\6. felev\onlab\codewriter\codewriter\bin\Debug\netcoreapp3.1\codewriter.runtimeconfig.dev.json
+D:\School\6. felev\onlab\codewriter\codewriter\bin\Debug\netcoreapp3.1\codewriter.dll
+D:\School\6. felev\onlab\codewriter\codewriter\bin\Debug\netcoreapp3.1\codewriter.pdb
+D:\School\6. felev\onlab\codewriter\codewriter\obj\Debug\netcoreapp3.1\codewriter.csprojAssemblyReference.cache
+D:\School\6. felev\onlab\codewriter\codewriter\obj\Debug\netcoreapp3.1\codewriter.AssemblyInfoInputs.cache
+D:\School\6. felev\onlab\codewriter\codewriter\obj\Debug\netcoreapp3.1\codewriter.AssemblyInfo.cs
+D:\School\6. felev\onlab\codewriter\codewriter\obj\Debug\netcoreapp3.1\codewriter.csproj.CoreCompileInputs.cache
+D:\School\6. felev\onlab\codewriter\codewriter\obj\Debug\netcoreapp3.1\codewriter.dll
+D:\School\6. felev\onlab\codewriter\codewriter\obj\Debug\netcoreapp3.1\codewriter.pdb
+D:\School\6. felev\onlab\codewriter\codewriter\obj\Debug\netcoreapp3.1\codewriter.genruntimeconfig.cache

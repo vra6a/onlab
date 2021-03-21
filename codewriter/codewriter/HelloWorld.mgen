@@ -1,0 +1,8 @@
+﻿namespace MGenSample;
+generator HelloWorld;
+
+template Hello(string name)
+Hello, [name];
+end template
+
+
