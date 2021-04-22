@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\School\\6. felev\\onlab fiddle\\sadge\\ModelGenerator\\ModelSourceGenerator\\ModelSourceGenerator.csproj": {}
+  },
+  "projects": {
+    "D:\\School\\6. felev\\onlab fiddle\\sadge\\ModelGenerator\\ModelSourceGenerator\\ModelSourceGenerator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\School\\6. felev\\onlab fiddle\\sadge\\ModelGenerator\\ModelSourceGenerator\\ModelSourceGenerator.csproj",
+        "projectName": "ModelSourceGenerator",
+        "projectPath": "D:\\School\\6. felev\\onlab fiddle\\sadge\\ModelGenerator\\ModelSourceGenerator\\ModelSourceGenerator.csproj",
+        "packagesPath": "C:\\Users\\varga\\.nuget\\packages\\",
+        "outputPath": "D:\\School\\6. felev\\onlab fiddle\\sadge\\ModelGenerator\\ModelSourceGenerator\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\varga\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\School\\6. felev\\onlab fiddle\\nuget": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.2, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.9.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300-preview.21180.15\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

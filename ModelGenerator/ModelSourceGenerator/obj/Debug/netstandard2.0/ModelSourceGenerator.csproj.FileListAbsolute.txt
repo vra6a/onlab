@@ -1,0 +1,10 @@
+D:\School\6. felev\onlab fiddle\sadge\ModelGenerator\ModelSourceGenerator\bin\Debug\netstandard2.0\ModelSourceGenerator.deps.json
+D:\School\6. felev\onlab fiddle\sadge\ModelGenerator\ModelSourceGenerator\bin\Debug\netstandard2.0\ModelSourceGenerator.dll
+D:\School\6. felev\onlab fiddle\sadge\ModelGenerator\ModelSourceGenerator\bin\Debug\netstandard2.0\ModelSourceGenerator.pdb
+D:\School\6. felev\onlab fiddle\sadge\ModelGenerator\ModelSourceGenerator\obj\Debug\netstandard2.0\ModelSourceGenerator.GeneratedMSBuildEditorConfig.editorconfig
+D:\School\6. felev\onlab fiddle\sadge\ModelGenerator\ModelSourceGenerator\obj\Debug\netstandard2.0\ModelSourceGenerator.AssemblyInfoInputs.cache
+D:\School\6. felev\onlab fiddle\sadge\ModelGenerator\ModelSourceGenerator\obj\Debug\netstandard2.0\ModelSourceGenerator.AssemblyInfo.cs
+D:\School\6. felev\onlab fiddle\sadge\ModelGenerator\ModelSourceGenerator\obj\Debug\netstandard2.0\ModelSourceGenerator.csproj.CoreCompileInputs.cache
+D:\School\6. felev\onlab fiddle\sadge\ModelGenerator\ModelSourceGenerator\obj\Debug\netstandard2.0\ModelSourceGenerator.dll
+D:\School\6. felev\onlab fiddle\sadge\ModelGenerator\ModelSourceGenerator\obj\Debug\netstandard2.0\ModelSourceGenerator.pdb
+D:\School\6. felev\onlab fiddle\sadge\ModelGenerator\ModelSourceGenerator\obj\Debug\netstandard2.0\ModelSourceGenerator.csproj.AssemblyReference.cache
