@@ -9,10 +9,16 @@ namespace ModelGenerator
         public string Name;
 
         public List<string> Implementations = new List<string>();
+        public List<string> Properties = new List<string>();
 
         public InterfaceElement(string name)
         {     
             Name = name;
+        }
+
+        public void addProperty(string property)
+        {
+            Properties.Add(property);
         }
 
         public void addImplementation(string imp)
@@ -26,6 +32,10 @@ namespace ModelGenerator
         public string getImplementations()
         {
             string tmp = "";
+            foreach (string prop in Properties)
+            {
+                tmp += "public " + prop + "\n";
+            }
             for (int i=0; i< Implementations.Count-1; i++)
             {
                 tmp += Implementations[i];

@@ -16,18 +16,18 @@ namespace ModelGenerator
             foreach (var symbol in GeneratorUtils.GetNamedTypeSymbols(context.Compilation))
             {
                
-                if (GeneratorUtils.IsModelObject(symbol) && symbol.DeclaringSyntaxReferences.Length > 0)
+                if(symbol.DeclaringSyntaxReferences.Length > 0)
                 {
-                    var list = symbol.DeclaringSyntaxReferences.ToList();
-                    foreach (var l in list)
+                    if (GeneratorUtils.IsModelObject(symbol))
                     {
-                        //Console.WriteLine(l.GetSyntax());
+                        GenerateImplementation(context, symbol);
+                    }else if(GeneratorUtils.HasOppositeAttribute(symbol))
+                    {
+                        Console.WriteLine(symbol);
                     }
-                    
-                    
-                    GenerateImplementation(context, symbol);
-
                 }
+                
+                
             }
             
         }

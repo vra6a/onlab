@@ -853,11 +853,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\School\\6. felev\\onlab fiddle\\sadge\\ModelGenerator\\ModelSourceGenerator\\ModelSourceGenerator.csproj",
+      "projectUniqueName": "D:\\School\\6. felev\\onlab\\ModelGenerator\\ModelSourceGenerator\\ModelSourceGenerator.csproj",
       "projectName": "ModelSourceGenerator",
-      "projectPath": "D:\\School\\6. felev\\onlab fiddle\\sadge\\ModelGenerator\\ModelSourceGenerator\\ModelSourceGenerator.csproj",
+      "projectPath": "D:\\School\\6. felev\\onlab\\ModelGenerator\\ModelSourceGenerator\\ModelSourceGenerator.csproj",
       "packagesPath": "C:\\Users\\varga\\.nuget\\packages\\",
-      "outputPath": "D:\\School\\6. felev\\onlab fiddle\\sadge\\ModelGenerator\\ModelSourceGenerator\\obj\\",
+      "outputPath": "D:\\School\\6. felev\\onlab\\ModelGenerator\\ModelSourceGenerator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

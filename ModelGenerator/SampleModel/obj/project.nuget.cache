@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KiGRf7bN/Z3Mgu3xBT0catelI+Jlxcx2oFN/nrfD9KH2fDLgD3RrvqA6J4MIuw3oBw9AU8CY92ehRnFNlJkCtw==",
+  "dgSpecHash": "Xcb//nFQfZ8prj6h+lWVLzTRLUgRXYrX5qh/OiOSagkKRtngVw0x3mjgPHulaXenc8n4rZhXnvc5vKgplaedqw==",
   "success": true,
-  "projectFilePath": "D:\\School\\6. felev\\onlab fiddle\\sadge\\ModelGenerator\\SampleModel\\SampleModel.csproj",
+  "projectFilePath": "D:\\School\\6. felev\\onlab\\ModelGenerator\\SampleModel\\SampleModel.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\varga\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\varga\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

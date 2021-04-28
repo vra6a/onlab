@@ -39,5 +39,16 @@ namespace ModelGenerator
             }
             return false;
         }
+
+        public static bool HasOppositeAttribute(INamedTypeSymbol namedType)
+        {
+            foreach (var member in namedType.GetMembers())
+            {
+                foreach (var attr in member.GetAttributes())
+                    if (attr.AttributeClass.Name == "OppositeAttribute")
+                        return true;
+            }
+            return false;
+        }
     }
 }

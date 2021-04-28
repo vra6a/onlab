@@ -20,9 +20,16 @@ namespace ModelGenerator
                 var arr = context.Compilation.SyntaxTrees.ToArray();
                
                 List<string> funcNames = getFuncNames(intf.Name, arr[0].GetRoot().DescendantNodes().ToArray());
+                List<string> funcProperties = getFuncProperties(intf.Name, arr[0].GetRoot().DescendantNodes().ToArray());
                 List<string> funcBodies = getFuncBody(funcNames, arr[1].GetRoot().DescendantNodes().ToArray());
+
                 InterfaceElement e = new InterfaceElement(intf.Name);
-                foreach(string fb in funcBodies)
+
+                foreach (string fp in funcProperties)
+                {
+                    e.addProperty(fp);
+                }
+                foreach (string fb in funcBodies)
                 {
                     e.addImplementation(fb);
                 }
@@ -72,6 +79,34 @@ namespace ModelGenerator
             return bodies;
         }
 
+        private List<string> getFuncProperties(string intfName, SyntaxNode[] nodes)
+        {
+            bool isFirst = true;
+            List<string> properties = new List<string>();
+            foreach (SyntaxNode n in nodes)
+            {
+                if (n.ToFullString().Contains("public interface " + intfName))
+                {
+                    if (isFirst)
+                    {
+                        isFirst = false;
+                    }
+                    else
+                    {
+                        var desNodes = n.DescendantNodes().ToList();
+                        foreach (var a in desNodes)
+                        {
+                            if (a is PropertyDeclarationSyntax)
+                            {
+                                properties.Add(a.ToString());
+                            }
+                        }
+                    }
+                }
+            }
+            return properties;
+        }
+
 
         private List<string> getFuncNames(string intfName, SyntaxNode[] nodes)
         {
@@ -89,7 +124,7 @@ namespace ModelGenerator
                         var desNodes = n.DescendantNodes().ToList();
                         foreach(var a in desNodes)
                         {
-                            if(a is PropertyDeclarationSyntax || a is MethodDeclarationSyntax)
+                            if(a is MethodDeclarationSyntax)
                             {
                                 funcNames.Add(a.ToString().Substring(0, a.ToString().Length - 1));
                             }

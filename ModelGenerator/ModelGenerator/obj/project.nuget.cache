@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "s0JUB7v6+tkVh2py9L/rnY/LWL9DtkwIWhs2N/E5l8ty/RaXxq2PHp+pitavLYh/y7ghOG/H1hzA2XLGzvqmeg==",
+  "dgSpecHash": "7j0l3U9C7V6MhB2OOoJ0VzEy8lHCFVCQhRtq0Z/PBnLyHGdeRL58OZhdjSYjeq8Ywz55pZ4dRQO1WROvsDt/lg==",
   "success": true,
-  "projectFilePath": "D:\\School\\6. felev\\onlab fiddle\\sadge\\ModelGenerator\\ModelGenerator\\ModelGenerator.csproj",
+  "projectFilePath": "D:\\School\\6. felev\\onlab\\ModelGenerator\\ModelGenerator\\ModelGenerator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\varga\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.0.0\\microsoft.codeanalysis.analyzers.3.0.0.nupkg.sha512",
     "C:\\Users\\varga\\.nuget\\packages\\microsoft.codeanalysis.common\\3.9.0\\microsoft.codeanalysis.common.3.9.0.nupkg.sha512",

@@ -610,11 +610,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\School\\6. felev\\onlab fiddle\\sadge\\ModelGenerator\\ModelGenerator\\ModelGenerator.csproj",
+      "projectUniqueName": "D:\\School\\6. felev\\onlab\\ModelGenerator\\ModelGenerator\\ModelGenerator.csproj",
       "projectName": "ModelGenerator",
-      "projectPath": "D:\\School\\6. felev\\onlab fiddle\\sadge\\ModelGenerator\\ModelGenerator\\ModelGenerator.csproj",
+      "projectPath": "D:\\School\\6. felev\\onlab\\ModelGenerator\\ModelGenerator\\ModelGenerator.csproj",
       "packagesPath": "C:\\Users\\varga\\.nuget\\packages\\",
-      "outputPath": "D:\\School\\6. felev\\onlab fiddle\\sadge\\ModelGenerator\\ModelGenerator\\obj\\",
+      "outputPath": "D:\\School\\6. felev\\onlab\\ModelGenerator\\ModelGenerator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -635,8 +635,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\School\\6. felev\\onlab fiddle\\sadge\\ModelGenerator\\ModelSourceGenerator\\ModelSourceGenerator.csproj": {
-              "projectPath": "D:\\School\\6. felev\\onlab fiddle\\sadge\\ModelGenerator\\ModelSourceGenerator\\ModelSourceGenerator.csproj"
+            "D:\\School\\6. felev\\onlab\\ModelGenerator\\ModelSourceGenerator\\ModelSourceGenerator.csproj": {
+              "projectPath": "D:\\School\\6. felev\\onlab\\ModelGenerator\\ModelSourceGenerator\\ModelSourceGenerator.csproj"
             }
           }
         }
