@@ -41,7 +41,7 @@ namespace ModelGenerator
             var cls = ns.GetMembers(clsName).OfType<INamedTypeSymbol>().Where(nts => nts.TypeKind == TypeKind.Class).FirstOrDefault();
 
             holder.addElement(intf, context);
-            holder.addProperty(intf, context);
+            holder.addProperty(intf, context); ;
             var element = holder.getElementByName(intf.Name);
 
             var source =

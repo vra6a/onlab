@@ -47,9 +47,9 @@ namespace ModelGenerator
                 if(e.Name == intf.Name)
                 {
                     var arr = context.Compilation.SyntaxTrees.ToArray();
-                    List<string> funcProperties = getFuncProperties(intf.Name, arr[0].GetRoot().DescendantNodes().ToArray());
+                    List<customProperty> funcProperties = getFuncProperties(intf.Name, arr[0].GetRoot().DescendantNodes().ToArray());
 
-                    foreach (string fp in funcProperties)
+                    foreach (customProperty fp in funcProperties)
                     {
                         e.addProperty(fp);
                     }
@@ -99,10 +99,10 @@ namespace ModelGenerator
             return bodies;
         }
 
-        private List<string> getFuncProperties(string intfName, SyntaxNode[] nodes)
+        private List<customProperty> getFuncProperties(string intfName, SyntaxNode[] nodes)
         {
             bool isFirst = true;
-            List<string> properties = new List<string>();
+            List<customProperty> properties = new List<customProperty>();
             foreach (SyntaxNode n in nodes)
             {
                 
@@ -122,13 +122,35 @@ namespace ModelGenerator
 
                             if (a is PropertyDeclarationSyntax)
                             {
-                                if(a.ToFullString().Contains("]"))
+                                Console.WriteLine(a.ToFullString());
+                                
+                                bool onlySetter = false;
+                                foreach (var b in a.DescendantNodes())
+                                {
+                                    if(b is AccessorListSyntax)
+                                    {
+
+                                        if (b.DescendantNodes().Count() < 2)
+                                        {
+                                            onlySetter = true;
+                                        }
+                                    }
+                                }
+                                Console.WriteLine(onlySetter);
+                                Console.WriteLine("------");
+                                if (a.ToFullString().Contains("]"))
                                 {
                                     var tmp = a.ToFullString().Split(']');
-                                    properties.Add(tmp[1]);
-                                }else
+                                    var interfaceadder = tmp[1].ToString().Split(' ');
+                                    interfaceadder = interfaceadder.Where(x => !string.IsNullOrEmpty(x)).ToArray();
+                                    interfaceadder[2] = intfName + "." + interfaceadder[2];
+                                    var final = String.Join(" ", interfaceadder);
+                                    properties.Add(new customProperty(final, true));
+
+                                }
+                                else
                                 {
-                                    properties.Add(a.ToFullString());
+                                    properties.Add(new customProperty(a.ToFullString(), false));
                                 }
                                 
                             }

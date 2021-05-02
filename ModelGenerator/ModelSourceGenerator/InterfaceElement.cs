@@ -9,14 +9,14 @@ namespace ModelGenerator
         public string Name;
 
         public List<string> Implementations = new List<string>();
-        public List<string> Properties = new List<string>();
+        public List<customProperty> Properties = new List<customProperty>();
 
         public InterfaceElement(string name)
         {     
             Name = name;
         }
 
-        public void addProperty(string property)
+        public void addProperty(customProperty property)
         {
             Properties.Add(property);
         }
@@ -32,9 +32,17 @@ namespace ModelGenerator
         public string getProperties()
         {
             string tmp = "";
-            foreach (string prop in Properties)
+            foreach (customProperty prop in Properties)
             {
-                tmp += "public " + prop + "\n";
+                if(prop.isOpposite)
+                {
+                    tmp += prop.body + "\n";
+                }
+                else
+                {
+                    tmp += "public " + prop.body + "\n";
+                }
+                
             }
             return tmp;
         }
