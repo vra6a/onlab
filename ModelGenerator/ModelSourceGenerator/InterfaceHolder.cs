@@ -17,26 +17,46 @@ namespace ModelGenerator
         public void addElement(INamedTypeSymbol intf, StandaloneGeneratorExecutionContext context) {
             if(getElementByName(intf.Name) == null)
             {
-                var arr = context.Compilation.SyntaxTrees.ToArray();
-               
-                List<string> funcNames = getFuncNames(intf.Name, arr[0].GetRoot().DescendantNodes().ToArray());
-                List<string> funcProperties = getFuncProperties(intf.Name, arr[0].GetRoot().DescendantNodes().ToArray());
-                List<string> funcBodies = getFuncBody(funcNames, arr[1].GetRoot().DescendantNodes().ToArray());
-
                 InterfaceElement e = new InterfaceElement(intf.Name);
 
-                foreach (string fp in funcProperties)
-                {
-                    e.addProperty(fp);
-                }
-                foreach (string fb in funcBodies)
-                {
-                    e.addImplementation(fb);
-                }
-                
                 elements.Add(e);
             }
         }
+
+        public void addImplementations(INamedTypeSymbol intf, StandaloneGeneratorExecutionContext context)
+        {
+            foreach (var e in elements)
+            {
+                if (e.Name == intf.Name)
+                {
+                    var arr = context.Compilation.SyntaxTrees.ToArray();
+                    List<string> funcNames = getFuncNames(intf.Name, arr[0].GetRoot().DescendantNodes().ToArray());
+                    List<string> funcBodies = getFuncBody(funcNames, arr[1].GetRoot().DescendantNodes().ToArray());
+
+                    foreach (string fb in funcBodies)
+                    {
+                        e.addImplementation(fb);
+                    }
+                }
+            }
+        }
+
+        public void addProperty(INamedTypeSymbol intf, StandaloneGeneratorExecutionContext context) {
+            foreach(var e in elements)
+            {
+                if(e.Name == intf.Name)
+                {
+                    var arr = context.Compilation.SyntaxTrees.ToArray();
+                    List<string> funcProperties = getFuncProperties(intf.Name, arr[0].GetRoot().DescendantNodes().ToArray());
+
+                    foreach (string fp in funcProperties)
+                    {
+                        e.addProperty(fp);
+                    }
+                }
+            }
+        }
+
 
         public InterfaceElement getElementByName(string interfaceName)
         {
@@ -85,6 +105,8 @@ namespace ModelGenerator
             List<string> properties = new List<string>();
             foreach (SyntaxNode n in nodes)
             {
+                
+
                 if (n.ToFullString().Contains("public interface " + intfName))
                 {
                     if (isFirst)
@@ -96,9 +118,27 @@ namespace ModelGenerator
                         var desNodes = n.DescendantNodes().ToList();
                         foreach (var a in desNodes)
                         {
+                            
+
                             if (a is PropertyDeclarationSyntax)
                             {
-                                properties.Add(a.ToString());
+                                if(a.ToFullString().Contains("]"))
+                                {
+                                    var tmp = a.ToFullString().Split(']');
+                                    properties.Add(tmp[1]);
+                                }else
+                                {
+                                    properties.Add(a.ToFullString());
+                                }
+                                
+                            }
+                            if (a is SimpleBaseTypeSyntax)
+                            {
+                                var otherProperties = getFuncProperties(a.ToString(), nodes);
+                                foreach (var o in otherProperties)
+                                {
+                                    properties.Add(o);
+                                }
                             }
                         }
                     }

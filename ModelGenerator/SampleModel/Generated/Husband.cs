@@ -1,6 +1,9 @@
 namespace SampleModel {
-    public partial class NamedElement : INamedElement {
+    public partial class Husband : IHusband {
         public         string Name { get; set; }
+
+public 
+        IWife Wife { get; set; }
 
 
         

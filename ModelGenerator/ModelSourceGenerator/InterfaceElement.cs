@@ -29,13 +29,19 @@ namespace ModelGenerator
             
         }
 
-        public string getImplementations()
+        public string getProperties()
         {
             string tmp = "";
             foreach (string prop in Properties)
             {
                 tmp += "public " + prop + "\n";
             }
+            return tmp;
+        }
+
+        public string getImplementations()
+        {
+            string tmp = "";
             for (int i=0; i< Implementations.Count-1; i++)
             {
                 tmp += Implementations[i];

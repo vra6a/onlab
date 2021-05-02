@@ -1,5 +1,6 @@
 namespace SampleModel {
     public partial class D : ID {
+        
                 public string FooA(string name)
         {
             return "FooA: " + name;
@@ -13,6 +14,5 @@ namespace SampleModel {
             return "FooC: " + name;
         }
 
-        
     }
 }
