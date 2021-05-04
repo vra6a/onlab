@@ -122,7 +122,6 @@ namespace ModelGenerator
 
                             if (a is PropertyDeclarationSyntax)
                             {
-                                Console.WriteLine(a.ToFullString());
                                 
                                 bool onlySetter = false;
                                 foreach (var b in a.DescendantNodes())
@@ -136,8 +135,6 @@ namespace ModelGenerator
                                         }
                                     }
                                 }
-                                Console.WriteLine(onlySetter);
-                                Console.WriteLine("------");
                                 if (a.ToFullString().Contains("]"))
                                 {
                                     var tmp = a.ToFullString().Split(']');
