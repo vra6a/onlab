@@ -1,4 +1,6 @@
-namespace SampleModel {
+
+using System.Collections.Generic;
+   namespace SampleModel {
     public partial class B : IB {
         
                 public string FooA(string name)

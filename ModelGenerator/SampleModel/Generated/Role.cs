@@ -1,4 +1,6 @@
-namespace SampleModel {
+
+using System.Collections.Generic;
+   namespace SampleModel {
     public partial class Role : IRole {
         public         string Name { get; set; }
 

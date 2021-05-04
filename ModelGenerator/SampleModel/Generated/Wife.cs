@@ -1,4 +1,6 @@
-namespace SampleModel {
+
+using System.Collections.Generic;
+   namespace SampleModel {
     public partial class Wife : IWife {
         public         string Name { get; set; }
 
