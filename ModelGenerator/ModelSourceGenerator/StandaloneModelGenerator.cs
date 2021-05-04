@@ -15,19 +15,14 @@ namespace ModelGenerator
         {
             foreach (var symbol in GeneratorUtils.GetNamedTypeSymbols(context.Compilation))
             {
-               
-                if(symbol.DeclaringSyntaxReferences.Length > 0)
+
+                if (symbol.DeclaringSyntaxReferences.Length > 0)
                 {
-                    if (GeneratorUtils.IsModelObject(symbol))
+                    if (GeneratorUtils.IsModelObject(symbol) || GeneratorUtils.HasOppositeAttribute(symbol))
                     {
                         GenerateImplementation(context, symbol);
-                    }else if(GeneratorUtils.HasOppositeAttribute(symbol))
-                    {
-                        
-                        GenerateOpposite(context, symbol);
                     }
                 }
-                
                 
             }
             
@@ -69,7 +64,6 @@ $@"namespace {nsName} {{
 
             var element = holder.getElementByName(intf.Name);
 
-            var firstLine = "public partial class " + clsName;
             var source = 
 $@"namespace {nsName} {{
     public partial class {clsName} : {intf.Name} {{
