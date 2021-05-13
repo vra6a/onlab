@@ -140,9 +140,11 @@ namespace ModelGenerator
                                     var tmp = a.ToFullString().Split(']');
                                     var interfaceadder = tmp[1].ToString().Split(' ');
                                     interfaceadder = interfaceadder.Where(x => !string.IsNullOrEmpty(x)).ToArray();
-                                    interfaceadder[2] = intfName + "." + interfaceadder[2];
-                                    var final = String.Join(" ", interfaceadder);
-                                    properties.Add(new customProperty(final, true));
+                                    properties.Add(new customProperty(interfaceadder[1] + " " + interfaceadder[2].ToLower() + ";", true));
+
+                                    //var final = String.Join(" ", interfaceadder);
+                                    string final = createProperty(interfaceadder, a);
+                                    properties.Add(new customProperty(final, false));
 
                                 }
                                 else
@@ -165,6 +167,52 @@ namespace ModelGenerator
             }
             return properties;
         }
+
+        private string createProperty(string[] data, SyntaxNode a)
+        {
+            string opposite = getAtributeName(a);
+            string privateProperty = data[2].ToLower();
+            string head = data[0] + " " + data[1] + " " + data[2] + " "  + "\n";
+            string body =
+                $@"{{
+                        get {{return {privateProperty}; }}
+                        set 
+                        {{
+                            if(!object.Equals({privateProperty}, value))
+                            {{
+                                {privateProperty} = ({data[2]})value;
+                                if(!object.Equals({privateProperty}, null)) {privateProperty}.{opposite} = this;
+                            }}
+                        }}
+                    }}";
+            Console.WriteLine(head);
+            Console.WriteLine(body);
+
+
+            return String.Join(" ", head, body); ;
+        }
+
+        private string getAtributeName(SyntaxNode a) 
+        {
+            string opposite = "";
+            var nodes = a.DescendantNodes().ToList();
+            foreach(SyntaxNode n in nodes)
+            {
+                if(n is AttributeArgumentSyntax)
+                {
+                    Console.WriteLine(n.ToFullString());
+                    string[] tmp = n.ToFullString().Split('"');
+                    if(tmp.Length > 2)
+                    {
+                        opposite = tmp[1];
+                    }
+                    
+                }
+  
+            }
+            return opposite;
+        }
+
 
 
         private List<string> getFuncNames(string intfName, SyntaxNode[] nodes)

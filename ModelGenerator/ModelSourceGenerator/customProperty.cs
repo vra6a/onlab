@@ -7,12 +7,12 @@ namespace ModelGenerator
     class customProperty
     {
         public string body;
-        public bool isOpposite;
+        public bool isPrivate;
 
-        public customProperty(string _body, bool _isOpposite)
+        public customProperty(string _body, bool _isPrivate)
         {
             this.body = _body;
-            this.isOpposite = _isOpposite;
+            this.isPrivate = _isPrivate;
         }
     }
 }

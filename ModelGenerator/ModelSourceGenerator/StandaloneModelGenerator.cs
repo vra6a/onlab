@@ -45,6 +45,7 @@ namespace ModelGenerator
             var source = 
 $@"
 using System.Collections.Generic;
+using ModelGenerator;
    namespace {nsName} {{
     public partial class {clsName} : {intf.Name} {{
         {element.getProperties()}

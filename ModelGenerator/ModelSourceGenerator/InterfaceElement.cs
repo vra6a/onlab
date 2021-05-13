@@ -34,9 +34,9 @@ namespace ModelGenerator
             string tmp = "";
             foreach (customProperty prop in Properties)
             {
-                if(prop.isOpposite)
+                if(prop.isPrivate)
                 {
-                    tmp += prop.body + "\n";
+                    tmp += "private " + prop.body + "\n";
                 }
                 else
                 {
@@ -50,7 +50,7 @@ namespace ModelGenerator
         public string getImplementations()
         {
             string tmp = "";
-            for (int i=0; i< Implementations.Count-1; i++)
+            for (int i=0; i< Implementations.Count; i++)
             {
                 tmp += Implementations[i];
             }
