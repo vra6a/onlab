@@ -200,9 +200,6 @@ namespace ModelGenerator
                         }}";
             }
             body += "}";
-                        
-            Console.WriteLine(head);
-            Console.WriteLine(body);
 
 
             return String.Join(" ", head, body); ;
@@ -216,7 +213,6 @@ namespace ModelGenerator
             {
                 if(n is AttributeArgumentSyntax)
                 {
-                    Console.WriteLine(n.ToFullString());
                     string[] tmp = n.ToFullString().Split('"');
                     if(tmp.Length > 2)
                     {
