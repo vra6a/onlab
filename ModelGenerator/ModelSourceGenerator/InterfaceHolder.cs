@@ -172,19 +172,35 @@ namespace ModelGenerator
         {
             string opposite = getAtributeName(a);
             string privateProperty = data[2].ToLower();
+            bool hasSet = false;
+            foreach (string s in data)
+            {
+                if (s.Contains("set"))
+                {
+                    hasSet = true;
+                }
+                
+            }
+            
+
             string head = data[0] + " " + data[1] + " " + data[2] + " "  + "\n";
             string body =
                 $@"{{
-                        get {{return {privateProperty}; }}
-                        set 
+                        get {{return {privateProperty}; }}";
+            if(hasSet)
+            {
+                body +=
+                     $@"set 
                         {{
                             if(!object.Equals({privateProperty}, value))
                             {{
                                 {privateProperty} = ({data[2]})value;
                                 if(!object.Equals({privateProperty}, null)) {privateProperty}.{opposite} = this;
                             }}
-                        }}
-                    }}";
+                        }}";
+            }
+            body += "}";
+                        
             Console.WriteLine(head);
             Console.WriteLine(body);
 
